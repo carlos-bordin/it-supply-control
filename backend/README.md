@@ -10,7 +10,7 @@ backend/
 ├── ItSupplyControl.slnx
 ├── src/ItSupplyControl.Api/
 │   ├── Program.cs
-│   ├── Modules/      Devices/, Suppliers/, EndUsers/, Assignments/, Tickets/
+│   ├── Modules/      Assets/, SupplierExchanges/, MasterData/
 │   ├── Data/         AppDbContext.cs, Migrations/
 │   └── Common/
 └── tests/

@@ -8,7 +8,7 @@ Estrutura prevista:
 ```
 frontend/src/
 ├── app/          rotas, layout, providers
-├── features/     devices/, suppliers/, end-users/, assignments/, tickets/
+├── features/     assets/, supplier-exchanges/, master-data/
 ├── components/   componentes de interface reutilizáveis
 ├── lib/          cliente da API, funções auxiliares
 └── styles/
