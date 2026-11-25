@@ -16,8 +16,9 @@ Ser a **fonte da verdade** sobre a situação de cada ativo (estado, local, com 
 aconteceu com ele) e mostrar ao utilizador exatamente o que precisa para decidir.
 
 As planilhas continuam sendo usadas pela equipe para outras atividades. Para consulta e
-filtros, a ferramenta alimenta um **Excel somente leitura via Power Query**
-(ver [ADR 0003](decisions/0003-source-of-truth-and-excel-feed.md)).
+filtros, a ferramenta gera uma **planilha de consulta somente leitura no SharePoint** da equipe
+(ver [ADR 0003](decisions/0003-source-of-truth-and-excel-feed.md) e
+[ADR 0004](decisions/0004-excel-report-file-in-sharepoint.md)).
 
 ## Quem usa
 
@@ -42,7 +43,8 @@ O funcionário final **não** acessa a ferramenta.
 - Histórico de eventos por ativo (eventos nunca são apagados, só desconsiderados).
 - Cadastros de apoio em listas fixas: sites, fornecedores, tipos, marcas, modelos
   ([cadastros de apoio](domain/master-data.md)).
-- Feed de dados para o Excel (Power Query): aba de ativos e aba de eventos.
+- Planilha de consulta `ativos.xlsx` regravada no SharePoint a cada mudança: aba de ativos e
+  aba de eventos.
 
 ## Telas do MVP
 
@@ -71,7 +73,7 @@ O funcionário final **não** acessa a ferramenta.
 | Relatório de faturamento por centro de custo | Documentado em [futuro](future.md) |
 | Perfis com permissões diferentes | Documentado em [futuro](future.md) |
 | Painel com indicadores | Substituído pela pesquisa com filtros |
-| Download de planilha pela ferramenta | Consulta em Excel só via Power Query |
+| Download de planilha pela ferramenta | Consulta em Excel só pela planilha no SharePoint |
 
 ## Princípios que guiaram as decisões
 
@@ -86,7 +88,8 @@ O funcionário final **não** acessa a ferramenta.
 
 - **REQ x RITM**: a lista original de atributos cita "REQ (número da requisição)", e o processo
   cita RITM. No MVP há um único campo **RITM**. Confirmar se o REQ também precisa ser guardado.
-- **Registro do aplicativo no Entra ID**: depende da TI corporativa. O login e o feed do Power
-  Query dependem disso; se não for liberado, a decisão precisa ser revista.
+- **Pedidos à TI corporativa**: o registro do aplicativo no Entra ID, a assinatura de produção e
+  a permissão no SharePoint dependem dela (lista em [passo a passo do Azure](infra/azure-setup.md)).
+  A permissão no SharePoint já foi garantida.
 - **Quem mantém as listas fixas**: assumido que qualquer utilizador pode incluir itens nos
   cadastros de apoio (já que todos têm as mesmas permissões).

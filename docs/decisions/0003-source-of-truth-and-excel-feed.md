@@ -1,7 +1,10 @@
 # ADR 0003: ferramenta como fonte da verdade e Excel via Power Query
 
 - **Data:** 24/11/2026
-- **Situação:** aceita
+- **Situação:** aceita; a parte "Excel via Power Query" foi **substituída pela
+  [ADR 0004](0004-excel-report-file-in-sharepoint.md)** em 25/11/2026. Continua valendo: a
+  ferramenta é a fonte da verdade, a pesquisa interna tem só os filtros essenciais e não há botão
+  de download.
 
 ## Contexto
 

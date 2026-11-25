@@ -19,5 +19,6 @@
 | Evento | Registro imutável no histórico de um ativo | `AssetEvent` |
 | Desconsiderar | Marcar um evento como errado sem apagá-lo | `Disregard` |
 | Baixa | Saída de circulação de um ativo interno | `WrittenOff` |
+| Planilha de consulta | Arquivo Excel somente leitura, gerado pela ferramenta no SharePoint da equipe, com a situação atual dos ativos e o histórico de eventos | `AssetReport` |
 
 Os nomes da coluna "No código" são sugestões e podem mudar ao implementar.
