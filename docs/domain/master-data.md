@@ -5,7 +5,7 @@ Todos os campos categóricos são escolhidos de **listas fixas**, para impedir i
 
 | Lista | Campos |
 |---|---|
-| Sites | Nome, endereço |
+| Sites | Nome, endereço, Cnpj |
 | Fornecedores | Nome, endereço |
 | Tipos | Nome (iniciais: desktop, notebook, celular, tablet, monitor) |
 | Marcas | Nome |
