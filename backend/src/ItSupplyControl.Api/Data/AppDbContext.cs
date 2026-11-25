@@ -14,6 +14,12 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 			site.Property(s => s.Name).HasMaxLength(64);
 			site.Property(s => s.Address).HasMaxLength(128);
 
+			site.Property(s => s.Cnpj)
+				.HasMaxLength(14)
+				.IsFixedLength()
+				.IsUnicode(false);
+
+
 			site.HasIndex(s => s.Name).IsUnique();
 		});
 	}
