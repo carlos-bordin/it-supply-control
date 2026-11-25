@@ -1,0 +1,6 @@
+@ItSupplyControl.Api_HostAddress = http://localhost:5128
+
+GET {{ItSupplyControl.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
