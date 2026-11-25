@@ -1,5 +1,6 @@
 using ItSupplyControl.Api.Data;
 using Microsoft.EntityFrameworkCore;
+using ItSupplyControl.Api.Modules.MasterData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +11,18 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddValidation();
+builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+	app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
+app.MapSiteEndpoints();
 
 app.Run();
