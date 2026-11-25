@@ -1,0 +1,20 @@
+{
+	// Extensões sugeridas pelo VS Code a quem abrir este repositório.
+	"recommendations": [
+		// Backend: C#, explorador da solução, depuração e testes .NET
+		"ms-dotnettools.csdevkit",
+		// Faz o editor seguir o .editorconfig (tabulação, fim de linha LF)
+		"editorconfig.editorconfig",
+		// Requisições de teste dos arquivos .http da API
+		"humao.rest-client",
+		// Consultas no SQL Server local e no Azure SQL (login Entra)
+		"ms-mssql.mssql",
+		// Docker Compose do SQL Server local
+		"ms-azuretools.vscode-containers",
+		// Frontend: avisos de código e testes
+		"dbaeumer.vscode-eslint",
+		"vitest.explorer",
+		// Pipeline de publicação
+		"github.vscode-github-actions"
+	]
+}
