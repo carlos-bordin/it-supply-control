@@ -29,7 +29,7 @@ ativo que o asset tag 10 externo. A origem é um campo próprio do ativo, sempre
 | Fornecedor | Só externos; lista fixa |
 | Nº do contrato | Só externos; texto livre, apenas referência |
 | Matrícula do usuário | Preenchida na reserva/entrega |
-| RITM | Preenchida na reserva |
+| RITM | Preenchida na reserva; é a única referência ao ServiceNow (o REQ não é guardado) |
 | Centro de custo | Opcional, informado na entrega |
 | Data de empréstimo | Preenchida na entrega |
 

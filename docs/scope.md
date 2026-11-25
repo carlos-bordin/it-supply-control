@@ -84,10 +84,12 @@ O funcionário final **não** acessa a ferramenta.
 - **Listas fixas para evitar inconsistência.** Campos categóricos são escolhidos de listas.
 - **Simples primeiro.** O que não é essencial para substituir o controle atual ficou para depois.
 
+## Pontos resolvidos
+
+- **REQ x RITM** (25/11/2026): o ativo guarda só a **RITM**. O REQ não é registrado.
+
 ## Pontos em aberto
 
-- **REQ x RITM**: a lista original de atributos cita "REQ (número da requisição)", e o processo
-  cita RITM. No MVP há um único campo **RITM**. Confirmar se o REQ também precisa ser guardado.
 - **Pedidos à TI corporativa**: o registro do aplicativo no Entra ID, a assinatura de produção e
   a permissão no SharePoint dependem dela (lista em [passo a passo do Azure](infra/azure-setup.md)).
   A permissão no SharePoint já foi garantida.
