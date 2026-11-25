@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ItSupplyControl.Api/ItSupplyControl.Api.csproj" />
+  </Folder>
+</Solution>
