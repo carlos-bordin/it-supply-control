@@ -19,7 +19,7 @@ GET {{host}}/api/sites/1
 ### Id inexistente (deve retornar 404)
 GET {{host}}/api/sites/999
 
-### Noem repetido, com texto em uppercase (deve retornar 409)
+### Nome repetido, com texto em uppercase (deve retornar 409)
 POST {{host}}/api/sites
 Content-Type: application/json
 
